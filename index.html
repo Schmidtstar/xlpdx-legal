@@ -19,10 +19,8 @@
       --border:  rgba(26, 111, 255, 0.18);
       --border2: rgba(255, 215, 0, 0.22);
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       background: radial-gradient(ellipse at 30% 20%, #0d1e38 0%, #070c18 55%, #060814 100%);
       color: var(--text);
@@ -31,7 +29,6 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
-
     body::before {
       content: '';
       position: fixed;
@@ -52,7 +49,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
     .container {
       position: relative;
       z-index: 1;
@@ -60,13 +56,11 @@
       margin: 0 auto;
       padding: 56px 20px 80px;
     }
-
     .site-header {
       text-align: center;
       margin-bottom: 52px;
       animation: fadeDown 0.7s ease both;
     }
-
     .logo {
       font-family: 'Exo 2', sans-serif;
       font-size: clamp(2.6rem, 9vw, 4.4rem);
@@ -77,14 +71,12 @@
       text-shadow: 0 0 24px rgba(26,111,255,0.5), 0 2px 8px rgba(0,0,0,0.8);
       line-height: 1;
     }
-
     .logo .x {
       color: var(--pink2);
       text-shadow: 0 0 24px rgba(255,215,0,0.8), 0 0 60px rgba(255,215,0,0.4), 0 2px 8px rgba(0,0,0,0.8);
       display: inline-block;
       transform: skewX(-8deg);
     }
-
     .tagline {
       margin-top: 14px;
       font-size: 0.72rem;
@@ -93,14 +85,12 @@
       text-transform: uppercase;
     }
     .tagline span { color: var(--cyan); margin: 0 8px; }
-
     .header-divider {
       margin: 22px auto 0;
       width: 200px; height: 1px;
       background: linear-gradient(90deg, transparent, var(--cyan), transparent);
       opacity: 0.5;
     }
-
     .nav-pills {
       display: flex;
       justify-content: center;
@@ -109,7 +99,6 @@
       animation: fadeDown 0.7s 0.1s ease both;
       flex-wrap: wrap;
     }
-
     .nav-pill {
       font-family: 'Exo 2', sans-serif;
       font-size: 0.72rem;
@@ -129,7 +118,6 @@
       border-color: var(--cyan);
       box-shadow: 0 0 18px rgba(26,111,255,0.25);
     }
-
     .section {
       background: linear-gradient(135deg, rgba(13,27,46,0.9) 0%, rgba(10,20,38,0.95) 100%);
       border: 1px solid var(--border);
@@ -164,7 +152,6 @@
       background: radial-gradient(circle, rgba(26,111,255,0.06) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .section.gold-accent { border-color: var(--border2); }
     .section.gold-accent::before {
       background: linear-gradient(90deg, var(--pink), var(--pink2));
@@ -177,7 +164,6 @@
     .section.gold-accent::after {
       background: radial-gradient(circle, rgba(255,215,0,0.06) 0%, transparent 70%);
     }
-
     .section-num {
       font-family: 'Exo 2', sans-serif;
       font-size: 0.6rem;
@@ -187,7 +173,6 @@
       text-transform: uppercase;
       margin-bottom: 6px;
     }
-
     h1.section-title {
       font-family: 'Exo 2', sans-serif;
       font-size: clamp(1.2rem, 4vw, 1.6rem);
@@ -199,7 +184,6 @@
       text-shadow: 0 0 20px rgba(26,111,255,0.35);
     }
     h1.section-title.gold { text-shadow: 0 0 20px rgba(255,215,0,0.4); }
-
     h2.section-title {
       font-family: 'Exo 2', sans-serif;
       font-size: 0.85rem;
@@ -210,14 +194,12 @@
       margin-bottom: 12px;
     }
     .section.gold-accent h2.section-title { color: var(--pink2); }
-
     p {
       font-size: 0.95rem;
       line-height: 1.8;
       color: var(--text);
       opacity: 0.85;
     }
-
     .stand-badge {
       display: inline-flex;
       align-items: center;
@@ -246,7 +228,6 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.3; }
     }
-
     .contact-block {
       margin-top: 16px;
       background: rgba(0,0,0,0.25);
@@ -258,7 +239,6 @@
     }
     .contact-block a { color: var(--cyan); text-decoration: none; transition: text-shadow 0.2s; }
     .contact-block a:hover { text-shadow: 0 0 10px var(--cyan); }
-
     .support-link {
       display: inline-block;
       color: var(--cyan);
@@ -270,7 +250,6 @@
       transition: all 0.2s;
     }
     .support-link:hover { text-shadow: 0 0 12px var(--cyan); border-bottom-color: var(--cyan); }
-
     .section-divider {
       display: flex;
       align-items: center;
@@ -288,7 +267,6 @@
     }
     .section-divider::before,
     .section-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
     #datenschutz .section:nth-child(1) { animation-delay: 0.12s; }
     #datenschutz .section:nth-child(2) { animation-delay: 0.19s; }
     #datenschutz .section:nth-child(3) { animation-delay: 0.26s; }
@@ -297,7 +275,6 @@
     #datenschutz .section:nth-child(6) { animation-delay: 0.47s; }
     #datenschutz .section:nth-child(7) { animation-delay: 0.54s; }
     #impressum  .section:nth-child(1) { animation-delay: 0.61s; }
-
     footer {
       position: relative; z-index: 1;
       text-align: center;
@@ -315,7 +292,6 @@
       background: linear-gradient(90deg, transparent, var(--border), transparent);
       margin-bottom: 24px;
     }
-
     @keyframes fadeDown {
       from { opacity: 0; transform: translateY(-18px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -324,14 +300,12 @@
       from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     @media (max-width: 480px) {
       .section { padding: 24px 18px; border-radius: 14px; }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
 
     <header class="site-header">
@@ -353,7 +327,10 @@
         <div class="stand-badge">Stand: Juni 2026</div>
         <p>Verantwortlich für diese App:</p>
         <div class="contact-block">
-          Jan Schmidt (Privatperson / App-Entwickler)<br>
+          Jan Phillip Schmidt (Privatperson / App-Entwickler)<br>
+          c/o flexdienst – #21046<br>
+          Kurt-Schumacher-Straße 76<br>
+          67663 Kaiserslautern<br>
           Deutschland<br><br>
           E-Mail: <a href="mailto:nexuru.apps@gmail.com">nexuru.apps@gmail.com</a>
         </div>
@@ -387,7 +364,7 @@
         <div class="section-num">// 05</div>
         <h2 class="section-title">Beschwerderecht</h2>
         <p>Betroffene haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.<br><br>
-        Zuständig ist der jeweilige Landesbeauftragte für Datenschutz und Informationsfreiheit des Bundeslandes des Nutzers.</p>
+        Zuständig ist der Landesbeauftragte für Datenschutz und Informationsfreiheit Rheinland-Pfalz (LfDI RLP).</p>
       </div>
 
       <div class="section gold-accent">
@@ -405,7 +382,10 @@
         <div class="section-num">// Anbieterkennzeichnung</div>
         <h1 class="section-title gold">Impressum</h1>
         <div class="contact-block">
-          Jan Schmidt (Privatperson / App-Entwickler)<br>
+          Jan Phillip Schmidt (Privatperson / App-Entwickler)<br>
+          c/o flexdienst – #21046<br>
+          Kurt-Schumacher-Straße 76<br>
+          67663 Kaiserslautern<br>
           Deutschland<br><br>
           E-Mail: <a href="mailto:nexuru.apps@gmail.com">nexuru.apps@gmail.com</a>
         </div>
@@ -415,7 +395,7 @@
   </div>
 
   <footer>
-    &copy; 2026 Jan Schmidt &nbsp;·&nbsp; XLPDX &nbsp;·&nbsp; All rights reserved
+    &copy; 2026 Jan Phillip Schmidt &nbsp;·&nbsp; XLPDX &nbsp;·&nbsp; All rights reserved
   </footer>
 
 </body>
